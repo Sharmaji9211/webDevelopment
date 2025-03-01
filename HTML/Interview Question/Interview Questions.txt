@@ -1,0 +1,593 @@
+How will you start a ordered list from 10 ?
+You can use the "Start" attribute like this Start= "10"; in Ol tag
+
+What input type will you use to upload a image ?
+use the <input> element with the type="file" .you can specify that only images files use accept attribute.
+
+Name any 5 Html5 tags
+video 
+audio
+time
+nav
+header
+
+What is dns and when it come in picture
+DNS (Domain Name System) is a system that translates human-readable domain names (e.g., www.google.com) 
+into IP addresses (e.g., 142.250.183.206) that computers use to identify each other on the internet. 
+It acts like a phonebook for the web, allowing users to access websites without memorizing numerical IP addresses.
+
+What is Markup
+Markup refers to a system of symbols or codes used to structure and format documents, 
+primarily in web development and publishing. 
+It defines how content should be displayed rather than how it functions.
+Defines document structure and formatting.
+Helps browsers render web content correctly.
+Improves accessibility and SEO.
+
+SEO {Knowledge of basics}
+SEO (Search Engine Optimization) is the process of optimizing a website to improve 
+its ranking on search engines like Google, Bing, and Yahoo. It helps increase organic (non-paid) traffic 
+by making a website more search engine-friendly
+
+Inspect Elements
+Inspect Element is a browser tool that allows users to view and modify the HTML, CSS, and JavaScript
+of a webpage in real time. It is commonly used by developers 
+for debugging, testing, and customizing website appearance.
+
+Explain what is webpage designing
+Webpage designing is the process of creating the visual layout, structure, and user experience of a webpage.
+It involves designing the appearance, usability, and interactivity of a website using various tools and technologies
+
+How will u open another windows using anchor tag
+You can open another window using the <a> (anchor) tag by adding the target="_blank" attribute.
+
+what does viewport meta tag do
+The viewport meta tag controls how a webpage is displayed on mobile and tablet devices. 
+It helps make websites responsive by adjusting the layout to fit different screen sizes.
+
+What are Attributes in html
+Attributes in HTML provide additional information about an element. They modify the behavior, appearance, or functionality of elements.
+
+What is dns
+Makes the internet user-friendly (You don’t need to remember IP addresses).
+Acts as the phonebook of the internet, directing users to the correct website.
+Enables efficient and fast browsing by caching IP addresses.
+
+what is ip address
+An IP address (Internet Protocol Address) is a unique numerical identifier assigned 
+to every device connected to a network, allowing them to communicate with each other over 
+the internet or local networks.
+
+🔹 Types of IP Addresses
+IPv4 (Internet Protocol Version 4)
+Format: Four sets of numbers (0-255) separated by dots.
+Example: 192.168.1.1
+Limit: Supports about 4.3 billion unique addresses.
+Problem: Limited supply, leading to IPv6 adoption.
+
+IPv6 (Internet Protocol Version 6)
+Format: Eight groups of hexadecimal numbers separated by colons.
+Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+Limit: Supports trillions of unique addresses (almost infinite).
+Why Needed? IPv4 addresses are running out due to increased internet usage.
+
+what is localhost
+Localhost refers to the loopback address of a computer, meaning it points to itself. 
+It is used for testing and development without needing an internet connection.
+✅ Localhost IP Address: 127.0.0.1 (IPv4) or ::1 (IPv6)
+✅ Used by developers to test websites, applications, and servers locally.
+When you enter localhost in your browser, your computer redirects the request 
+to itself instead of searching on the internet.
+It helps in running and testing web applications locally before deploying them online.
+
+HTML5 vs HTML4
+
+
+Doctype Declaration	<!DOCTYPE html> (Simple & Short)	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"> (Long & Complex)
+
+Multimedia Support	<audio>, <video> tags allow embedding media without plugins	No built-in support; required Flash/third-party plugins
+
+Form Enhancements	New input types: email, date, range, color, number, placeholder	Fewer input types; required JavaScript for validation
+
+Canvas & SVG Support	<canvas> and <svg> allow drawing graphics & animations without plugins	Required external plugins like Flash for graphics
+
+Mobile-Friendly	Responsive & mobile-friendly with the <meta viewport> tag	No native support for mobile responsiveness
+
+Geolocation API	Built-in support for tracking user location	No native geolocation feature
+
+Local Storage	Supports localStorage and sessionStorage for storing data in the browser	Only cookies for storing small data
+
+WebSockets	Supports real-time communication via WebSockets	No WebSocket support
+
+Backward Compatibility	Fully compatible with older browsers	No support for new HTML5 features
+
+
+what are semantic tags
+Semantic tags in HTML clearly describe the meaning of the content inside them. They help both browsers and developers
+understand the structure of a webpage, improving SEO, accessibility, and readability.
+
+what are the new features in HTML5?
+1. Improved Semantics
+New semantic elements like <article>, <section>, <header>, <footer>, <aside>, and <nav> provide better document structure.
+2. Enhanced Multimedia Support
+<audio> and <video> elements allow embedding media without requiring plugins like Flash.
+The <track> element provides subtitles and captions for videos.
+3. New Form Controls & Attributes
+New input types: email, date, tel, number, range, search, url, color, etc.
+Attributes like placeholder, autofocus, required, pattern, and autocomplete improve form usability.
+4. Canvas API
+<canvas> element allows drawing graphics, animations, and games using JavaScript.
+
+
+
+
+Difference between div and span
+Key Differences at a Glance
+Feature	         <div>	                                                <span>
+Type	Block-level element	                          Inline element
+Layout	Starts on a new line and takes full width	Stays inline without breaking the flow
+Usage	Wrapping large sections, grouping elements	Styling small parts of text inside a block
+CSS Styling	Used for layout and structural styling	Used for text styling within a paragraph
+
+
+Difference between class and IDs
+1. class (Reusable & Multiple Elements)
+Purpose: Used to apply styles or behavior to multiple elements.
+Uniqueness: A class can be assigned to multiple elements on the same page.
+Usage: Best for grouping elements that share common styling or behavior.
+CSS Selector: Denoted by a dot (.) in CSS.
+
+2. id (Unique & Single Element)
+Purpose: Used to uniquely identify a single element.
+Uniqueness: Each id must be unique within a page (no duplicates).
+Usage: Best for targeting a specific element, like navigation sections or JavaScript interactions.
+CSS Selector: Denoted by a hash (#) in CSS.
+
+
+What are self closing tags
+Self-closing tags (also called void elements) are HTML tags that do not require a closing tag because 
+they do not contain any content. These tags automatically close themselves.
+hr,br , img, input, meta, link .
+
+How many types of headings are der ?How to decide which to use where
+HTML provides six types of headings:
+
+<h1> (Largest)
+<h2>
+<h3>
+<h4>
+<h5>
+<h6> (Smallest)
+<h1>: Used for the main title of the webpage (should be unique).
+<h2>: Used for section titles or major subheadings.
+<h3> to <h6>: Used for subsections and smaller headings to organize content hierarchically.
+
+
+Difference Between Block and Inline Elements
+Feature	                 Block Element	                     Inline Element
+Layout	   Starts on a new line and takes full width	Stays within the same line and takes only necessary width
+Common Tags	<div>, <p>, <h1>-<h6>, <section>	<span>, <a>, <strong>, <em>
+Use Case	Structuring layout and content sections	Styling small parts of text within a block
+
+Difference Between <em> and <strong>
+Tag	               Meaning	                       Visual Effect
+<em>	          Emphasizes text	                     Italicized (*word*)
+<strong>	Indicates strong importance	Bold (**word**)
+Example:
+<p>This is <em>important</em> but this is <strong>very important</strong>.</p>
+
+What are Attributes?
+Attributes add extra information to HTML elements. They are always defined inside the opening tag.
+Example of attributes:
+<img src="image.jpg" alt="A beautiful scenery">
+<a href="https://example.com" target="_blank">Visit Example</a>
+Here, src, alt, href, and target are attributes.
+
+Difference Between HTML Tags and Elements
+Feature	                               Tag	                                            Element
+Definition	An opening (<tag>) or closing (</tag>) part of an element	The entire structure, including the opening tag, content, and closing tag
+Example                             	<p>	                                 <p>This is a paragraph.</p>
+Explain <br> Tag
+The <br> tag is used to insert a line break in text, making the next content appear on a new line.
+It is a self-closing tag.
+Example:
+<p>Hello, this is line 1.<br>This is line 2.</p>
+
+What are Semantic Tags?
+Semantic tags clearly define the meaning of their content, improving readability and accessibility.
+
+Examples:
+<header> → Defines the header section.
+<nav> → Represents navigation links.
+<article> → Contains independent content.
+<footer> → Defines the footer of a page.
+Example:
+<header>
+  <h1>My Website</h1>
+</header>
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+</nav>
+
+
+Code to Create an Ordered List with Roman Numbers
+
+<ol type="I">
+  <li>Item One</li>
+  <li>Item Two</li>
+  <li>Item Three</li>
+</ol>
+
+
+Code to Create an Unordered List with Circle Bullets
+
+<ul style="list-style-type: circle;">
+  <li>First Item</li>
+  <li>Second Item</li>
+  <li>Third Item</li>
+</ul>
+
+Code to Create a Link to PrepBytes
+
+<a href="https://www.prepbytes.com" target="_blank">Visit PrepBytes</a>
+
+Write a code to insert an image
+
+<img src="image.jpg" alt="A Sample Image" width="300" height="200">
+src: Specifies the image path.
+alt: Provides alternative text if the image is not available.
+width and height: Define the image size.
+
+Code to Create a 2×2 Table (Name & Salary)
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Salary</th>
+  </tr>
+  <tr>
+    <td>Shivam</td>
+    <td>5000</td>
+  </tr>
+  <tr>
+    <td>Deepak</td>
+    <td>6000</td>
+  </tr>
+</table>
+
+Form with Input Fields
+<form>
+  Name: <input type="text" name="name"><br>
+  Age: <input type="number" name="age"><br>
+  Email: <input type="email" name="email"><br>
+  Contact: <input type="tel" name="contact"><br>
+  <input type="submit" value="Submit">
+</form>
+
+Table with Colspan Example
+<table border="1">
+  <tr>
+    <th colspan="2">Employee Details</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Salary</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>$5000</td>
+  </tr>
+</table>
+colspan="2" makes the header span two columns.
+
+
+Radio Button & Checkbox (Difference Explained)
+
+<form>
+  <p>Select a Course:</p>
+  <input type="radio" name="course" value="MERN"> MERN
+  <input type="radio" name="course" value="MEAN"> MEAN
+  
+  <p>Select Technologies:</p>
+  <input type="checkbox" name="tech" value="HTML"> HTML
+  <input type="checkbox" name="tech" value="CSS"> CSS
+  <input type="checkbox" name="tech" value="React"> React
+  <input type="checkbox" name="tech" value="Node"> Node
+</form>
+Difference:
+
+Radio Buttons allow only one selection per group.
+Checkboxes allow multiple selections.
+
+
+How Many Types of Headings in HTML?
+There are 6 types of headings:
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>.
+
+Which Heading Has Highest & Lowest Priority?
+<h1> has the highest priority.
+<h6> has the lowest priority.
+
+
+How to Create a Hyperlink in HTML?
+
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+href: Specifies the link.
+target="_blank": Opens link in a new tab.
+
+
+Which HTML Tag is Used for Tables?
+The <table> tag is used to display tabular data.
+
+
+Why Use <colgroup> Tag in Tables?
+It groups columns and applies styles to them.
+Example:
+
+<table border="1">
+  <colgroup>
+    <col style="background-color: lightgray;">
+  </colgroup>
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>John</td><td>30</td></tr>
+</table>
+
+Common Lists Used in Web Design
+Ordered List (<ol>)
+Unordered List (<ul>)
+Definition List (<dl>)
+
+Structure of a Definition List
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+
+
+What are <dl>, <dt>, and <dd>?
+
+<dl> → Definition List
+<dt> → Definition Term
+<dd> → Definition Description
+
+What is Semantic HTML?
+Semantic HTML uses meaningful tags (<article>, <section>, <header>, etc.) instead of generic <div> and <span> for better SEO and accessibility.
+
+Example:
+<article>
+  <h2>News Title</h2>
+  <p>This is an article.</p>
+</article>
+
+What is an Image Map?
+An image map allows clickable areas within an image.
+
+Example:
+<img src="map.jpg" usemap="#workmap">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" href="https://example.com">
+</map>
+
+How to Insert a Copyright Symbol on a Browser Page?
+Use the HTML entity `&copy;` to display the copyright symbol.
+
+<p>&copy; 2024 Your Company</p>
+
+How to Create a Nested Webpage in HTML?
+A nested webpage can be created using an `<iframe>` tag.
+
+<iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+
+What is the Use of `<iframe>` Tag? How to Create It?
+The `<iframe>` tag is used to embed another webpage within a webpage.
+
+<iframe src="https://www.google.com" width="800" height="600"></iframe>
+
+
+Important `<iframe>` Attributes
+- `src`: Specifies the URL of the embedded page.
+- `width` & `height`: Define the dimensions.
+- `frameborder`: Removes border if set to `0`.
+- `allowfullscreen`: Enables fullscreen mode.
+ 
+Does a Hyperlink Only Apply to Text?
+No, hyperlinks can be applied to images, buttons, and other elements.
+
+<a href="https://www.example.com">Click Here</a>
+<a href="https://www.example.com"><img src="image.jpg" alt="Clickable Image"></a>
+
+What is a Style Sheet?
+A **style sheet** is a CSS file used to control the appearance of an HTML document.
+
+<link rel="stylesheet" href="styles.css">
+
+
+Can You Create Multi-Colored Text on a Web Page?
+Yes, using `<span>` and CSS.
+
+<p><span style="color: red;">Red</span> <span style="color: blue;">Blue</span> <span style="color: green;">Green</span></p>
+
+
+Is It Possible to Change the Color of the Bullet?
+Yes, using CSS:
+
+<ul style="list-style-type: disc; color: red;">
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+ What is the Layout of HTML?
+HTML has a structured layout consisting of:
+- **Header**: `<header>`
+- **Navigation**: `<nav>`
+- **Content**: `<main>`
+- **Sidebar**: `<aside>`
+- **Footer**: `<footer>`
+
+What is a Marquee?
+A `<marquee>` tag is used for scrolling text (deprecated in HTML5).
+
+<marquee behavior="scroll" direction="left">Scrolling Text</marquee>
+
+How to Set a Background Image?
+
+<body style="background-image: url('background.jpg');">
+
+Tags to Separate Sections of Text
+- `<br>` (Line Break)
+- `<hr>` (Horizontal Rule)
+- `<p>` (Paragraph)
+
+What are Empty Elements?
+Tags that do not have closing tags, e.g., `<br>`, `<img>`, `<hr>`, `<input>`.
+
+What is the Use of `<span>` Tag?
+It is used to style inline elements.
+
+<p>This is a <span style="color: blue;">blue</span> word.</p>
+
+
+What are HTML Entities?
+Special characters used in HTML, e.g., `&lt;` (`<`), `&gt;` (`>`), `&amp;` (`&`).
+
+Why is a URL Encoded in HTML?
+To ensure special characters (e.g., `&`, `?`, `/`) are safely transmitted in a URL.
+
+Is `<!DOCTYPE html>` a Tag?
+No, it is a declaration that tells the browser the document type.
+
+What is the `<canvas>` Element?
+Used for drawing graphics using JavaScript.
+```html
+<canvas id="myCanvas" width="200" height="100"></canvas>
+```
+What is SVG?
+**Scalable Vector Graphics**, used to draw shapes and graphics.
+```html
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+```
+
+ New Form Input Types in HTML5
+- `email`, `date`, `number`, `range`, `tel`, `color`, `url`
+
+Does HTML5 Require a Browser Upgrade?
+Most modern browsers support HTML5, but older browsers may need updates.
+
+Video Formats Supported by HTML5
+- MP4, WebM, Ogg.
+
+Is `<audio>` Tag Supported in HTML5?
+Yes.
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+
+Difference Between `<progress>` and `<meter>`
+- `<progress>`: Shows task completion.
+- `<meter>`: Represents a measurement.
+
+<progress value="50" max="100"></progress>
+<meter value="70" min="0" max="100"></meter>
+
+What is `<figure>` and `<figcaption>`?
+Used for images with captions.
+
+<figure>
+  <img src="image.jpg" alt="Example">
+  <figcaption>This is an example image.</figcaption>
+</figure>
+
+
+What is `<datalist>`?
+Used to provide a dropdown suggestion list.
+
+<input list="browsers">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+</datalist>
+
+
+Is `<!DOCTYPE html>` Necessary?
+Yes, it ensures correct rendering in browsers.
+
+How to Create a Hyperlink?
+
+<a href="https://www.example.com">Visit Example</a>
+
+
+Required Attributes in `<input>`
+- `type`, `name`, `id`, `value`, `placeholder`.
+
+What is Markup Language & Hypertext?
+- **Markup Language**: Uses tags to structure content.
+- **Hypertext**: Links web pages together.
+
+Active Links vs Normal Links
+- **Active Links**: Currently clicked.
+- **Normal Links**: Not yet clicked.
+
+ What are Cell Spacing and Padding?
+- **Cell Spacing**: Space between table cells.
+- **Cell Padding**: Space inside a table cell.
+
+Difference Between HTML & XHTML
+- XHTML is **stricter** than HTML and requires proper nesting.
+
+Types of CSS in HTML
+1. **Inline CSS**: `style="color: red;"`
+2. **Internal CSS**: `<style>` tag in `<head>`.
+3. **External CSS**: Separate `.css` file.
+
+ What is the Use of `<label>` Tag?
+Used to label form controls and improve accessibility.
+```html
+<label for="name">Name:</label>
+<input type="text" id="name">
+```
+
+How can you apply JavaScript to a web page?
+ Using the <script> tag inside the HTML file
+
+What is main reason or main advantage of label tag?
+It improves accessibility and usability.
+Clicking the label selects the associated radio button/checkbox.
+Helps screen readers understand the form fields.
+
+
+Logical and Physical Tags in HTML
+Logical Tags: These describe the meaning of the enclosed text rather than its appearance. Example: <strong>, <em>, <abbr>, <cite>, <code>. These help in SEO and accessibility.
+Physical Tags: These define how the text should look (i.e., formatting). Example: <b>, <i>, <u>, <font>, <big>, <small>. These mainly affect the style without conveying meaning.
+
+
+ Creating Radio Buttons and Checkboxes
+Radio Button (for selecting one option)
+html
+Copy
+Edit
+<form>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+</form>
+Checkbox (for multiple selections)
+html
+Copy
+Edit
+<form>
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label>
+</form>

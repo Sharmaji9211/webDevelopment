@@ -1,0 +1,47 @@
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: rgb(0, 235, 252);
+    font-weight: 700;
+    /* text-decoration-line: line-through underline overline; */
+    text-decoration-style: wavy;
+    text-decoration-color: brown;
+    text-decoration-thickness: 3px;
+    font-size: large;
+}
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #8a2be2;
+    /* font-weight: bolder; */
+    font-weight: bold;
+}
+.p2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: red;
+    font-weight: lighter;
+}
+/* div.a{
+    font-size: x-large;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+div.b{
+    font-size: xx-large;
+}
+div.c{
+    font-size: 150%;
+} */
+
+
+div{
+    height: 300px;
+    width: 300px;
+    background-color: #8a2be2;
+    margin: 40px 60px 20px 80px ;
+    padding: 20px;
+    border: 5px inset red;
+
+}
+

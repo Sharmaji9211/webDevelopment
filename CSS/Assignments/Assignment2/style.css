@@ -1,0 +1,119 @@
+html{
+    margin: 0px;
+}
+body{
+    border: 5px solid green;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./istockphoto-1311482073-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ }
+ .a{
+    display: flex;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 30px;
+    color: white;
+    padding: 8px;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 300px;
+ }
+ #mid{
+    height: 70px;
+    z-index: 2;
+    right: 10px;
+ }
+ .offer{
+    border: 4px solid gray;
+    border-radius: 100%;
+    background-color: aquamarine;
+    width: 370px;
+    height: 370px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+ }
+ .off{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .off1{
+    text-decoration: underline;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .form{
+    display: flex;
+    border: 4px dotted red;
+    color: red;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+ }
+ .form input{
+    width: 220px;
+    text-align: center;
+ }
+ .menu{
+    border: 3px solid red;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 350px;
+
+ }
+ .menu h2{
+    text-align: center;
+ }
+ .Parent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+ }
+ .dish{
+    background-color: aqua;
+    color: blue;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 300px;
+    
+ }
+ .dish h2{
+    margin-left: 150px;
+    
+ }
+ .dish ul{
+    margin-left: 150px;
+    
+ }

@@ -1,0 +1,12 @@
+*{
+    background-color: black;
+    color: white;
+}
+.a{
+    visibility: visible;
+}
+.b{
+    visibility: hidden;
+    /* display: none; */
+    position: fixed;
+}

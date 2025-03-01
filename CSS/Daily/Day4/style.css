@@ -1,0 +1,28 @@
+.main{
+    flex-wrap: wrap;
+    display: flex;
+    width: 150px;
+    height: 500px;
+    border: 2px solid #000000;
+    align-items: start;
+    /* align-items: center; */
+    align-content:  space-around;
+    justify-content: center;
+
+}
+.card1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+.card2{
+    height: 80px;
+    width: 100px;
+    background-color:red;
+    /* align-self: flex-start; */
+}
+.card3{
+    height: 50px;
+    width:100px;
+    background-color:yellow;
+}

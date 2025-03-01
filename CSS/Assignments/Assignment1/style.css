@@ -1,0 +1,35 @@
+h1{
+    color: red;
+}
+#css{
+    color: greenyellow;
+}
+.bck{
+  background-color: yellow;
+}
+.under{
+  text-decoration: underline;   
+}
+.p1{
+  color: brown;
+
+}
+.p3{
+    color: brown;
+  
+  }
+  .p2{
+    color: brown;
+  
+  }
+  .sp{
+    background-color: yellow;
+  }
+.link{
+    color:brown;
+    background-color: yellow;
+    text-decoration: none;
+}
+li{
+   }
+   text-decoration-line: line-through underline overline; 

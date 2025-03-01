@@ -1,0 +1,17 @@
+*{
+    background-color: chartreuse;
+}
+h3{
+    background-color: brown;
+}
+h1,
+h2,
+h3{
+    background-color: crimson;
+}
+#first{
+background-color: grey;
+}
+.xyz{
+    background-color: deeppink;
+}
