@@ -1,0 +1,37 @@
+/* h1{
+    color: green;
+    text-align: center;
+}
+.grid-item{
+    background-color:rgb(255,255,255,0.8) ;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-container{
+    display: grid; 
+    grid-template-columns: 400px auto auto ;
+    column-gap: 20px;
+    row-gap: 20px;
+    background-color: gray;
+    padding: 5px;
+} */
+.grid-container{
+    background-color: yellow;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 50px;
+    box-shadow: 0 0 5px 5px yellowgreen;
+    text-shadow: -5px -5px 3px red ;
+    background-image: repeating-linear-gradient(150deg,
+    red 0%,
+    red 40%,
+    yellow 40%, 
+    yellow 60%,
+    green 60% ,
+    green 80%);
+
+}
