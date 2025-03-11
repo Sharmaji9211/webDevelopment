@@ -1,0 +1,176 @@
+body{
+    background-color: grey;
+    
+}
+.welcome{
+    background-color: white;
+    border: 8px solid red;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    width: 500px;
+    margin-top: 5px;
+    text-shadow: 2px 1px 2px purple;
+    box-shadow: 10px 10px 1px purple;
+    margin-left:30% ;
+}
+.welcome h2{
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; 
+     display: block;
+    background-color: white;
+}
+.hero{
+    border: 8px solid green;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.parenta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.parentb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+.cards{
+    height: 350px;
+    width: 225px;
+    color: purple;
+    background-color: white;
+    border: 8px solid red;
+    border-radius: 20px;
+    text-shadow: 2px 1px 2px purple;
+    box-shadow: 10px 10px 1px purple;
+}
+.cards h3,h2{
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    background-color: white;
+}
+#input{
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    display: block;
+}
+.num{
+    background-color: white;
+
+}
+label{
+    background-color: white;
+}
+.btn{
+    color: black;
+    background-color: red;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.footer{
+    background-color:green;
+    border: 8px solid rgb(205, 6, 255);
+    height: 80%;
+    width: 70%;
+    justify-items: center;
+    margin-left: 15%;
+    margin-top: 15px;
+
+}
+.footer h1{
+    color: black;
+    font-weight: bold;
+    background-color: green;
+}
+.menu1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: yellow;
+    color:black ;
+
+}
+.menu1 h1{
+    font-weight: bold;
+    color:black ;
+    text-align: center;
+    background-color: yellow;
+}
+.menu1 h3{
+    background-color: yellow;
+}
+.menu2{
+    background-color: yellow;
+    color:black ;
+    justify-items: center;
+}
+.menu2 h1{
+    font-weight: bold;
+    color:black ;
+    text-align: center;
+    background-color: yellow; 
+}
+.menu2{
+    background-color:yellow;
+}
+
+h3{
+    background-color: yellow;
+}
+
+.fixed{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    border-radius: 10px;
+    border: 5px solid red;
+    color: black;
+    width: 500px;
+    justify-content: space-around;
+    box-shadow: 10px 10px 5px purple;
+    align-items: center;
+    
+}
+.footer{
+    margin-bottom: 100px;
+}
+.footer-fix{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550px;
+    left: 460px;
+
+}
+
+.footer-fix .fixed{
+    padding: 10px;
+    margin-bottom: 5px;
+
+} 
+.offer{
+
+    display: block;
+    height:18px;
+    font-size:18px;
+    padding :7px;
+    text-align: center;
+    color: black; 
+    background-color: green; 
+
+}

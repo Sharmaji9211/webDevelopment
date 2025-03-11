@@ -1,0 +1,10 @@
+/* div p{
+    background-color: aqua;
+} */
+ /* div+p{
+    background-color: blue;
+ } */
+
+ div ~ h1{
+    background-color: chartreuse;
+ }

@@ -1,0 +1,51 @@
+.main{
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 100px;
+    transform: rotate(220deg);
+}
+.main1{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 100px;
+    transform: skewY(390deg);
+}
+.main2{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 100px;
+    transform: scaleY(1.1);
+    /* transition-duration: 1s;
+    transition-delay: 1s; */
+    animation-name: Shivam;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes Shivam {
+    0%{
+          background-color: aqua;
+    }
+    25%{
+        background-color: brown;
+    }
+    50%{
+        background-color: chartreuse;
+    }
+    100%{
+        background-color: darkgreen;
+    }
+}
+
+/* .main2:hover{
+    background-color: blue;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+} */
