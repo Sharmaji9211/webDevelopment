@@ -1,0 +1,143 @@
+.offer{
+    text-decoration: underline;
+    text-align: center;
+    background-image: linear-gradient(to right, red, green, 60%, yellow);
+}
+.head{
+background-color: aqua;
+color: black;
+border: 2px solid red;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+margin-top: 15px;
+width: 800px;
+margin-left: 280px;
+font-weight: bold;
+
+}
+
+.hero{
+    margin-top: 30px;
+    background-color: rgba(0, 255, 255, 0.61);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+.box1
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+.box2
+{
+    margin-left: 500px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.content{
+    height: 80px;
+    width: 350px;
+    background-color: aqua;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.Jee{
+    text-align: center;
+    text-decoration: underline;
+    background-image: linear-gradient(to right, red, yellow 60% , red);
+}
+.toper{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: radial-gradient(blue, aqua, green);
+}
+.stu{
+    background-color: yellow;
+    border: 2px solid red;
+    text-decoration: underline;
+    color: brown;
+    border-radius: 10px;
+    text-align: center;
+    height: 150px;
+    width: 200px;
+}
+.best{
+    margin-top: 15px;
+    border: 2px solid black;
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    width: 1250px;
+    height: auto;
+}
+.CAREER{
+    background-color: red;
+    color: white;
+    grid-column: 1 / 5;
+    text-align: center;
+}
+
+.doubt{
+    background-color: lightgreen;
+    height: 80px;
+    width: 360px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.get{
+    background-color: lightblue;
+    color: aliceblue;
+    height: 80px;
+    width: 360px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.result{
+    background-color: blue;
+    color: white;
+    height: 80px;
+    width: 360px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lorem{
+    height: 100px;
+    color: white;
+    background-color: orange;
+    grid-column: 1 / 4;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+.list{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    height: 185px;
+    width: 130px;
+    text-decoration: underline;
+    grid-column-start: 4;
+    grid-row: 2 / 8;
+}
+.all{
+    color: black;
+    background-color: aqua;
+    grid-column: 1 /5;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
