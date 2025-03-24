@@ -1,0 +1,213 @@
+body{
+    background-color: yellow;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.a1{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 40px;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    margin-top: 2px;
+    transform: skewX(20deg);
+    animation-name: transform1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes transform1{
+    0% {
+        transform: skewX(20deg);
+    }
+    50% {
+        transform: skewX(-20deg);
+    }
+    100% {
+        transform: skewX(20deg);
+    }
+}
+.a2{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 40px;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    margin-top: 2px;
+    transform: skewY(30deg);
+    animation-name: transform;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes transform{
+    0% {
+        transform: skewX(30deg);
+    }
+    50% {
+        transform: skewX(-30deg);
+    }
+    100% {
+        transform: skewX(30deg);
+    }
+}
+.a3{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 40px;
+
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin-top: 2px;
+    transform: rotate(90deg);
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.a4{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 40px;
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    margin-top: 2px;
+    transition-duration: 3s;
+}
+#box41{
+    background-color: skyblue;
+    animation-name: scale1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 1px solid blue;
+}
+@keyframes scale1{
+    0% {
+        transform: scaleY(1.0);
+    }
+    
+    50% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+#box42{
+    background-color: rgb(228, 89, 8);
+    animation-name: scale2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 1px solid blue;
+}
+@keyframes scale2{
+    0% {
+        transform: scaleX(1.0);
+    }
+    
+    50% {
+        transform: scaleX(0.5);
+    }
+    100% {
+        transform: scaleX(1.0);
+    }
+}
+#box43{
+    background-color: rgb(121, 15, 219);
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} 
+@keyframes rotate{
+0% {
+    transform: rotate(0deg);
+}
+
+50% {
+    transform: rotate(90deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top: 2px;
+    transition-duration: 3s;
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top: 10px;
+    transition-duration: 3s;
+}
+.box7{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top: 10px;
+    transition-duration: 3s; 
+}
+.box8{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top: 10px;
+    transition-duration: 3s;
+}
+.box9{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top: 10px;
+}
+.box10{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top: 10px;
+}
+.box11{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-top: 10px;
+}
+.box5:hover{
+    height: 100px;
+    width: 300px;
+}
+
+.box6:hover{
+    height: 300px;
+    width: 300px;
+}
