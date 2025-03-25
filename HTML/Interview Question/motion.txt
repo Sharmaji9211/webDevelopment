@@ -1,0 +1,7 @@
+
+              Sensors:motion--->detect--->ESP32------>HttpClient---->
+                    boolean status=client.post(api.thingSpeak.com/sensor-data);
+                    if(status){
+		
+			serial.print(status+"recieved");
+	             }		

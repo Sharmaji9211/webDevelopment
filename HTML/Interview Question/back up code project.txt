@@ -1,0 +1,155 @@
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+// Constants
+#define PIR_PIN_IN 34         // Digital pin connected to the entry PIR sensor output
+#define PIR_PIN_OUT 35        // Digital pin connected to the exit PIR sensor output
+#define LED_PIN 25            // GPIO pin connected to the LED
+#define SCREEN_WIDTH 128      // OLED display width, in pixels
+#define SCREEN_HEIGHT 64      // OLED display height, in pixels
+#define OLED_RESET -1         // Reset pin # (or -1 if sharing Arduino reset pin)
+
+// OLED Display Object
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+// People Counter Class
+class PeopleCounter {
+private:
+    int peopleCount;              // Current number of people
+    bool motionDetected_IN;       // Entry sensor state
+    bool motionDetected_OUT;      // Exit sensor state
+    unsigned long lastEventTime;  // Timestamp of the last event
+    String lastEventType;         // Last event type ("IN" or "OUT")
+    int lastPersonID;             // Last person ID
+    bool eventChanged;            // Flag to indicate display update is needed
+
+public:
+    // Constructor to initialize variables
+    PeopleCounter() {
+        peopleCount = 0;
+        motionDetected_IN = false;
+        motionDetected_OUT = false;
+        lastEventTime = 0;
+        lastEventType = "";
+        lastPersonID = 0;
+        eventChanged = false;
+    }
+
+    // Initialize system (sensors, LED, OLED)
+    void initializeSystem() {
+        pinMode(PIR_PIN_IN, INPUT_PULLUP);
+        pinMode(PIR_PIN_OUT, INPUT_PULLUP);
+        pinMode(LED_PIN, OUTPUT);
+        digitalWrite(LED_PIN, LOW);
+        Serial.begin(115200);
+
+        if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+            Serial.println(F("SSD1306 allocation failed"));
+            while (true);  // Halt program if OLED fails
+        }
+
+        display.clearDisplay();
+        display.setTextSize(1);
+        display.setTextColor(WHITE);
+        display.setCursor(5, 5);
+        display.println("Initializing...");
+        display.display();
+        delay(1000);
+        display.clearDisplay();
+    }
+
+    // Detect motion and update people count
+    void detectMotion() {
+        int val_IN = digitalRead(PIR_PIN_IN);    // Entry PIR sensor value
+        int val_OUT = digitalRead(PIR_PIN_OUT); // Exit PIR sensor value
+
+        if (val_IN == LOW && !motionDetected_IN) {
+            motionDetected_IN = true;
+            peopleCount++;
+            lastPersonID++;
+            lastEventTime = millis();
+            lastEventType = "IN";
+            eventChanged = true;
+            Serial.println("Person Entered");
+            Serial.print("People Count: ");
+            Serial.println(peopleCount);
+        } else if (val_IN == HIGH && motionDetected_IN) {
+            motionDetected_IN = false;
+        }
+
+        if (val_OUT == LOW && !motionDetected_OUT) {
+            motionDetected_OUT = true;
+            if (peopleCount > 0) {
+                peopleCount--;
+                lastEventTime = millis();
+                lastEventType = "OUT";
+                eventChanged = true;
+                Serial.println("Person Exited");
+                Serial.print("People Count: ");
+                Serial.println(peopleCount);
+            }
+        } else if (val_OUT == HIGH && motionDetected_OUT) {
+            motionDetected_OUT = false;
+        }
+    }
+
+    // Control LED based on people count
+    void controlLED() {
+        if (peopleCount > 0) {
+            digitalWrite(LED_PIN, HIGH);
+        } else {
+            digitalWrite(LED_PIN, LOW);
+        }
+    }
+
+    // Update OLED display if event data has changed
+    void updateOLED() {
+        if (eventChanged) {
+            displayTimeAndCount();
+            eventChanged = false;
+        }
+    }
+
+private:
+    // Display event information on OLED
+    void displayTimeAndCount() {
+        unsigned long seconds = (lastEventTime / 1000) % 60;
+        unsigned long minutes = (lastEventTime / 60000) % 60;
+        unsigned long hours = (lastEventTime / 3600000) % 24;
+
+        display.clearDisplay();
+        display.setTextSize(1);
+        display.setCursor(1, 1);
+        display.print("Event: ");
+        display.print(lastEventType);
+        display.setCursor(0, 15);
+        display.print("Time: ");
+        if (hours < 10) display.print("0");
+        display.print(hours);
+        display.print(":");
+        if (minutes < 10) display.print("0");
+        display.print(minutes);
+        display.print(":");
+        if (seconds < 10) display.print("0");
+        display.print(seconds);
+        display.setCursor(0, 35);
+        display.print("Count: ");
+        display.print(peopleCount);
+        display.display();
+    }
+};
+
+// Create an instance of the PeopleCounter class
+PeopleCounter counter;
+
+void setup() {
+    counter.initializeSystem();  // Initialize the system
+}
+
+void loop() {
+    counter.detectMotion();  // Detect motion and update people count
+    counter.controlLED();    // Control the LED based on the count
+    counter.updateOLED();    // Update the OLED display
+    delay(100);              // Debounce delay
+}
