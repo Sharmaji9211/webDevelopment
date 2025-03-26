@@ -95,13 +95,24 @@
 //  let newres1= newstr.replaceAll(" ","==");
 //  console.log(newres1);
 
- let newres2= newstr.trim();
- console.log(newres2);
+//  let newres2= newstr.trim();
+//  console.log(newres2);
 
- let newres3= newstr.split(" ");
+//  let newres3= newstr.split(" ");
 
- console.log(newres3);
- console.log(newstr.length);
+//  console.log(newres3);
+//  console.log(newstr.length);
+
+ let person = "My name is Shivam Sharma "
+
+
+ let personname= person.slice(11)
+ console.log(personname);
+ 
+
+
+
+
 
  
  
