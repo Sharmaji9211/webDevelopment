@@ -1,0 +1,25 @@
+.cards{
+    display: flex;
+}
+#card1{
+     height: 200px;
+     width: 200px;
+     border: 2px solid black;
+     background-color: aqua;
+     margin-right: 20px ;
+}
+.card2{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: blueviolet;
+    margin-right: 20px ;
+}
+.card3{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: brown;
+    margin-right: 20px ;
+    
+}
