@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "name":"shivam",
+        "Course":"B.tech",
+        "year":"4th",
+        "college":"GNIOT",
+        "homeTown":"Bareilly"
+    },
+    {
+        "id": "2",
+        "name":"Deepak",
+        "Course":"BCA",
+        "year":"1th",
+        "college":"RBMI",
+        "homeTown":"Lucknow"
+    },
+    {
+        "id": "3",
+        "name":"Kapil",
+        "Course":"B.SC",
+        "year":"3rd",
+        "college":"BCB",
+        "homeTown":"NOIDA"
+    },
+    {
+        "id": "4",
+        "name":"Rishabh",
+        "Course":"B.tech",
+        "year":"2th",
+        "college":"RKGIT",
+        "homeTown":"Ghaziyabad"
+    },
+    {
+        "id": "5",
+        "name":"Abhishek",
+        "Course":"B.A",
+        "year":"3rd",
+        "college":"DU",
+        "homeTown":"Delhi"
+    }
+]
