@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
     async function fetchData() {
         try {
-            const response = await fetch("https://jsonplaceholder.typicode.com/users");
+            const response = await fetch("https://fakestoreapi.com/products");
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -27,4 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     fetchData();
-});
+// });
