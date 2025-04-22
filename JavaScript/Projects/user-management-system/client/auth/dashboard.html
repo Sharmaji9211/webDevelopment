@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientHub - Dashboard</title>
+    <link rel="stylesheet" href="../public/static/css/styles.css">
+    <link rel="stylesheet" href="../public/static/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-users"></i></span>
+                <h1>Client<span>Hub</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard" class="active">Dashboard</a></li>
+                <li><a href="#users-management">Users Management</a></li>
+                <li><a href="#profile">My Profile</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button id="logoutBtn" class="btn logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard-section">
+            <h2>Welcome, <span id="userName"></span></h2>
+            <p>Your client management dashboard</p>
+            
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <p id="totalUsers">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>My Profile</h3>
+                    <p id="userEmail">Loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Users Management Section -->
+        <section id="users-management" class="users-section" style="display:none;">
+            <div class="section-header">
+                <h2>Users Management</h2>
+                <button id="addUserBtn" class="btn primary-btn">Add New User</button>
+            </div>
+            
+            <div class="user-form-container" id="userFormContainer" style="display:none;">
+                <form id="userForm">
+                    <input type="hidden" id="userId">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary-btn">Save</button>
+                        <button type="button" id="cancelBtn" class="btn secondary-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="users-table-container">
+                <table id="usersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTableBody">
+                        <!-- Users will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="profile-section" style="display:none;">
+            <h2>My Profile</h2>
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3 id="profileName"></h3>
+                    <p id="profileEmail"></p>
+                </div>
+                <div class="profile-details">
+                    <form id="profileForm">
+                        <input type="hidden" id="profileId">
+                        <div class="form-group">
+                            <label for="profileFirstName">First Name</label>
+                            <input type="text" id="profileFirstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profileLastName">Last Name</label>
+                            <input type="text" id="profileLastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profileEmailInput">Email</label>
+                            <input type="email" id="profileEmailInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profilePassword">Password (leave blank to keep current)</label>
+                            <input type="password" id="profilePassword">
+                        </div>
+                        <button type="submit" class="btn primary-btn">Update Profile</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <script src="dashboard.js"></script>
+</body>
+</html>
