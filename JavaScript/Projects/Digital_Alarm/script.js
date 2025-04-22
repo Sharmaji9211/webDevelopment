@@ -10,8 +10,10 @@ function showTime() {
   let sec = time.getSeconds();
   let am_pm = hour >= 12 ? "PM" : "AM";
 
-  if (hour > 12) hour -= 12;
-  if (hour == 0) hour = 12;
+  if (hour > 12) 
+     hour -= 12;
+  if (hour == 0) 
+     hour = 12;
 
   // let currentTime =  hour + ":" +  min + ":" + sec + am_pm;
   document.getElementById("timeh").innerHTML = hour + "</br>Hour";
@@ -20,6 +22,7 @@ function showTime() {
   document.getElementById("am").innerHTML = am_pm;
 
   // document.getElementById("watch").innerHTML = "Time " + currentTime;
+  displayGreeting();
 }
 
 function displayGreeting() {
@@ -32,20 +35,20 @@ function displayGreeting() {
   let nighttime = document.getElementById("night").value;
 
   if (parseInt(waketime) === hours) {
-    document.getElementById("imgPlaceholder").src =
-      "JavaScript Project Pics\component.svg";
+    document.getElementById("imgPlaceholder").src = "JavaScript Project Pics/component.svg";
+
     document.getElementById("message2").innerHTML = "GOOD MORNING! WAKE UP!!";
   } else if (parseInt(lunchtime) === hours) {
     document.getElementById("imgPlaceholder").src =
-      "JavaScript Project Pics\food.jpg";
+      "JavaScript Project Pics/food.jpg";
     document.getElementById("message2").innerHTML = "LET'S HAVE SOME LUNCH";
   } else if (parseInt(naptime) === hours) {
     document.getElementById("imgPlaceholder").src =
-      "JavaScript Project Pics\Tea.jpg";
+      "JavaScript Project Pics/Tea.jpg";
     document.getElementById("message2").innerHTML = "GET SOME TEA";
   } else if (parseInt(nighttime) === hours) {
     document.getElementById("imgPlaceholder").src =
-      "JavaScript Project Pics\Sleeptime.jpeg";
+      "JavaScript Project Pics/Sleeptime.jpeg";
     document.getElementById("message2").innerHTML = "GO TO BED AND SLEEP";
   }
 
