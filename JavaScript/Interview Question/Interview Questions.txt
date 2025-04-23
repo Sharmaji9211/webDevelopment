@@ -1,0 +1,77 @@
+Q: What are objects in JavaScript?
+A: Objects are collections of key-value pairs used to store data and functions in a structured way.
+
+Q: What are function constructors?
+A: Function constructors are regular functions used to create multiple objects of the same type using the 'new' keyword.
+
+Q: Give an example of inheritance using function constructor
+A:
+function Person(name) {
+    this.name = name;
+}
+function Student(name, roll) {
+    Person.call(this, name);
+    this.roll = roll;
+}
+
+Q: What is the use of setTimeout?
+A: setTimeout is used to delay the execution of a function after a specified number of milliseconds.
+
+Q: What are promises and why do we need them?
+A: Promises handle asynchronous operations, making it easier to manage success or failure of events like API calls.
+
+Q: What is the purpose of async/await keywords?
+A: async/await make asynchronous code look synchronous and more readable, especially with Promises.
+
+Q: What is callback hell?
+A: Callback hell is nested callbacks that make code hard to read and maintain.
+
+Q: What is promise?
+A: A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+Q: What are arrow functions?
+A: Arrow functions are a shorthand syntax for writing functions and they do not have their own 'this'.
+
+Q: Give an example of async/await
+A:
+async function fetchData() {
+  let res = await fetch('https://api.example.com/data');
+  let data = await res.json();
+  console.log(data);
+}
+
+Q: What is difference between null and undefined and where to use what?
+A: null is an intentional absence of value; undefined means a variable is declared but not assigned. Use null when you want to assign "nothing".
+
+Q: Write code to explain map and filter in arrays
+A:
+let nums = [1, 2, 3, 4];
+let doubled = nums.map(n => n * 2);
+let evens = nums.filter(n => n % 2 === 0);
+
+Q: Given an array of 0's and 1's find out number of 0's
+A:
+let arr = [0, 1, 1, 0, 0];
+let zeroCount = arr.filter(n => n === 0).length;
+
+Q: Given an array find out total no. of odd and even nos.
+A:
+let nums = [1, 2, 3, 4, 5];
+let odd = nums.filter(n => n % 2 !== 0).length;
+let even = nums.filter(n => n % 2 === 0).length;
+
+Q: Given a string find out number of vowels
+A:
+let str = "hello world";
+let vowels = str.match(/[aeiou]/gi)?.length || 0;
+
+Q: Write a code to create two objects with 2 properties each, one will be string and other will be an array. Create a function to check if all the elements of the arrays in both the objects are same
+A:
+let obj1 = { name: "Alice", items: [1, 2, 3] };
+let obj2 = { name: "Bob", items: [1, 2, 3] };
+
+function arraysEqual(a, b) {
+  return a.length === b.length && a.every((val, i) => val === b[i]);
+}
+
+console.log(arraysEqual(obj1.items, obj2.items)); // true
